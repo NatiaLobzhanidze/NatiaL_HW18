@@ -13,6 +13,11 @@
 		60E642F628889D60006D726A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E642F428889D60006D726A /* Main.storyboard */; };
 		60E642F828889D61006D726A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60E642F728889D61006D726A /* Assets.xcassets */; };
 		60E642FB28889D61006D726A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 60E642F928889D61006D726A /* LaunchScreen.storyboard */; };
+		60E6430328889E62006D726A /* GradiantExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E6430228889E62006D726A /* GradiantExtensions.swift */; };
+		60E643052888AF6E006D726A /* AddLabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E643042888AF6E006D726A /* AddLabelExtension.swift */; };
+		60E643072888CCEE006D726A /* BackViewAndImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E643062888CCEE006D726A /* BackViewAndImageView.swift */; };
+		60E643092888D31C006D726A /* TextFieldSExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E643082888D31C006D726A /* TextFieldSExtension.swift */; };
+		60E6430B2888DC4D006D726A /* AddButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E6430A2888DC4D006D726A /* AddButtonExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		60E642F728889D61006D726A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		60E642FA28889D61006D726A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		60E642FC28889D61006D726A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60E6430228889E62006D726A /* GradiantExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradiantExtensions.swift; sourceTree = "<group>"; };
+		60E643042888AF6E006D726A /* AddLabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLabelExtension.swift; sourceTree = "<group>"; };
+		60E643062888CCEE006D726A /* BackViewAndImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackViewAndImageView.swift; sourceTree = "<group>"; };
+		60E643082888D31C006D726A /* TextFieldSExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSExtension.swift; sourceTree = "<group>"; };
+		60E6430A2888DC4D006D726A /* AddButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddButtonExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 				60E642EE28889D60006D726A /* AppDelegate.swift */,
 				60E642F028889D60006D726A /* SceneDelegate.swift */,
 				60E642F228889D60006D726A /* ViewController.swift */,
+				60E6430A2888DC4D006D726A /* AddButtonExtension.swift */,
+				60E643082888D31C006D726A /* TextFieldSExtension.swift */,
+				60E643042888AF6E006D726A /* AddLabelExtension.swift */,
+				60E6430228889E62006D726A /* GradiantExtensions.swift */,
+				60E643062888CCEE006D726A /* BackViewAndImageView.swift */,
 				60E642F428889D60006D726A /* Main.storyboard */,
 				60E642F728889D61006D726A /* Assets.xcassets */,
 				60E642F928889D61006D726A /* LaunchScreen.storyboard */,
@@ -138,8 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E643092888D31C006D726A /* TextFieldSExtension.swift in Sources */,
 				60E642F328889D60006D726A /* ViewController.swift in Sources */,
+				60E6430328889E62006D726A /* GradiantExtensions.swift in Sources */,
+				60E643052888AF6E006D726A /* AddLabelExtension.swift in Sources */,
 				60E642EF28889D60006D726A /* AppDelegate.swift in Sources */,
+				60E6430B2888DC4D006D726A /* AddButtonExtension.swift in Sources */,
+				60E643072888CCEE006D726A /* BackViewAndImageView.swift in Sources */,
 				60E642F128889D60006D726A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
