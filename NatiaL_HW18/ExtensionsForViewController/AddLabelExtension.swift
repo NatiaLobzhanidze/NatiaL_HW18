@@ -9,9 +9,7 @@ import Foundation
 import UIKit
 
 extension ViewController {
-    
-   
-    
+
     func setUPTitleLabel(){
         titleLb.text = "IOS App Templates"
         titleLb.textAlignment = .center
@@ -31,7 +29,7 @@ extension ViewController {
                                       toItem: view,
                                      attribute: .top,
                                       multiplier: 1,
-                                      constant:70).isActive = true
+                                      constant:50).isActive = true
         
         let right = NSLayoutConstraint(item: titleLb,
                                        attribute: .right,
@@ -66,9 +64,9 @@ extension ViewController {
                                      attribute: .top,
                                       relatedBy: .equal,
                                       toItem: signBtn,
-                                     attribute: .top,
+                                     attribute: .bottom,
                                       multiplier: 1,
-                                      constant:70).isActive = true
+                                      constant: 10).isActive = true
         
         let right = NSLayoutConstraint(item: lastLineLb,
                                        attribute: .right,

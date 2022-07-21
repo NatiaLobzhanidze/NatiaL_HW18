@@ -47,6 +47,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		603A2ABB28895E7A0037328F /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				60E642EE28889D60006D726A /* AppDelegate.swift */,
+				60E642F028889D60006D726A /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		603A2ABC28895E8B0037328F /* ExtensionsForViewController */ = {
+			isa = PBXGroup;
+			children = (
+				60E643042888AF6E006D726A /* AddLabelExtension.swift */,
+				60E643062888CCEE006D726A /* BackViewAndImageView.swift */,
+				60E643082888D31C006D726A /* TextFieldSExtension.swift */,
+				60E6430A2888DC4D006D726A /* AddButtonExtension.swift */,
+				60E6430228889E62006D726A /* GradiantExtensions.swift */,
+			);
+			path = ExtensionsForViewController;
+			sourceTree = "<group>";
+		};
+		603A2ABD28895ECE0037328F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				60E642F728889D61006D726A /* Assets.xcassets */,
+				60E642F928889D61006D726A /* LaunchScreen.storyboard */,
+				60E642F428889D60006D726A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		60E642E228889D60006D726A = {
 			isa = PBXGroup;
 			children = (
@@ -66,17 +97,10 @@
 		60E642ED28889D60006D726A /* NatiaL_HW18 */ = {
 			isa = PBXGroup;
 			children = (
-				60E642EE28889D60006D726A /* AppDelegate.swift */,
-				60E642F028889D60006D726A /* SceneDelegate.swift */,
+				603A2ABB28895E7A0037328F /* SupportingFiles */,
 				60E642F228889D60006D726A /* ViewController.swift */,
-				60E6430A2888DC4D006D726A /* AddButtonExtension.swift */,
-				60E643082888D31C006D726A /* TextFieldSExtension.swift */,
-				60E643042888AF6E006D726A /* AddLabelExtension.swift */,
-				60E6430228889E62006D726A /* GradiantExtensions.swift */,
-				60E643062888CCEE006D726A /* BackViewAndImageView.swift */,
-				60E642F428889D60006D726A /* Main.storyboard */,
-				60E642F728889D61006D726A /* Assets.xcassets */,
-				60E642F928889D61006D726A /* LaunchScreen.storyboard */,
+				603A2ABC28895E8B0037328F /* ExtensionsForViewController */,
+				603A2ABD28895ECE0037328F /* View */,
 				60E642FC28889D61006D726A /* Info.plist */,
 			);
 			path = NatiaL_HW18;

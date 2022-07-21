@@ -11,7 +11,7 @@ import UIKit
 extension ViewController {
     
   
-// add backview
+//MARK: create View for image background and set Contstraints
 func addBackViewForImage() {
 
     let screenWidth = UIScreen.main.bounds.width
@@ -45,7 +45,8 @@ func addBackViewForImage() {
     
 }
     
-// addImageview
+    //MARK: create  imageView  and set Contstraints
+    
     func setMyImageView(){
         myImageView.image = UIImage(named: "rocket")
         myImageView.contentMode = .scaleAspectFill

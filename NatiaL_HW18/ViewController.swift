@@ -9,7 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    //add Label1
+    // MARK: add Title "IOS App Templates"
+    
     lazy var titleLb: UILabel = {
         let titleLb = UILabel()
         titleLb.translatesAutoresizingMaskIntoConstraints = false
@@ -17,12 +18,14 @@ class ViewController: UIViewController {
         return titleLb
     }()
     
-    //backview
+    // MARK: add gradient background for imageView
+    
     lazy var imageBackView: UIView = {
         makeViewGradianT()
     }()
     
-  // add imageView
+    // MARK: add ImageView
+    
     lazy var myImageView: UIImageView = {
         let myImageView = UIImageView()
         myImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -30,7 +33,8 @@ class ViewController: UIViewController {
         return myImageView
      }()
     
-// userNAme textField
+    // MARK: add username textField
+    
     lazy var userNameTextfield: UITextField = {
         let userNameTextfield = UITextField()
         userNameTextfield.translatesAutoresizingMaskIntoConstraints = false
@@ -39,17 +43,17 @@ class ViewController: UIViewController {
         return userNameTextfield
     }()
     
-// userPAssword textField
+    // MARK: add password textField
     
     lazy var userPasswordTextfield: UITextField = {
         let userPasswordTextfield = UITextField()
         userPasswordTextfield.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(userPasswordTextfield)
-        
+       
         return userPasswordTextfield
     }()
     
-    // Sign in Button
+    // MARK: add log in button
     
     lazy var signBtn: UIButton = {
         let signBtn = UIButton()
@@ -58,7 +62,7 @@ class ViewController: UIViewController {
         return signBtn
     }()
     
-    // addLAst Label
+    // MARK: add bottom textLabel
     
     lazy var lastLineLb: UILabel = {
         let lastLineLb = UILabel()
@@ -67,10 +71,12 @@ class ViewController: UIViewController {
         return lastLineLb
     }()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpView()
     }
+    
     
     
     func setUpView(){
@@ -78,20 +84,23 @@ class ViewController: UIViewController {
         setUPTitleLabel()
         addBackViewForImage()
         setMyImageView()
-        addUserTextField()
-        addUserPassTxtFld()
+        addTextField(with: userNameTextfield, toItem: myImageView, totextField: userPasswordTextfield, placeholder: "    Username", constantInt: 100)
+    
+        addTextField(with: userPasswordTextfield, toItem: nil, totextField: userNameTextfield , placeholder: "   Password", constantInt: 30)
         addButtonToView ()
         addLastLabel()
     }
     
+    // MARK: add GradianT To Background
     
     func addGradianTToBackView(){
         let firstColor =  UIColor(red: 146/255, green: 60/255, blue: 213/255, alpha: 1.0)
          let secondColor = UIColor(red: 20/255, green: 79/255, blue: 255/255, alpha: 1.0)
         self.view.applyGradient(colours: [firstColor, secondColor])
-        imageBackView.applyGradient(colours: [UIColor(red: 14/255, green: 6/255, blue: 23/255, alpha: 1.0), secondColor])
     }
 
+    // MARK: make image background view gradient
+    
     func makeViewGradianT() -> UIView{
         let imageBackView = UIView()
         imageBackView.translatesAutoresizingMaskIntoConstraints = false
